@@ -46,6 +46,10 @@ Stings are event-level specifications within a bloom that indicate which event l
 
 …
 
+## Author
+
+Jellyfish was written by Brad Fults <bfults@gmail.com>.
+
 ## Inspiration
 
 Inspiration for this project came from [quirkey's sammy][sammy] and [Sinatra][sinatra], a Ruby microframework.
@@ -53,6 +57,6 @@ Inspiration for this project came from [quirkey's sammy][sammy] and [Sinatra][si
  [sammy]: http://github.com/quirkey/sammy
  [sinatra]: http://github.com/sinatra/sinatra
 
-# License
+## License
 
 Jellyfish is released under the MIT License. See LICENSE for more information.
