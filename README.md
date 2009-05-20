@@ -8,7 +8,7 @@ Jellyfish doesn't replace other JS frameworks like jQuery or YUI—it runs right
 
 ## Dive In with an Example
 
-    $(document).jellyfish(function () {
+    jQuery(document).jellyfish(function () {
     
       bloom('/about', function () {
         sting('#header/click', function (evt) {
@@ -26,7 +26,7 @@ Jellyfish defines a couple of its own concepts to separate page-level interactio
 
 Blooms can be thought of as sections of code that are only run if their given URL matches the current URL loaded in the browser. Blooms also provide convenient access to page-level attributes like the query parameters and, optionally, can treat other pieces of the URL as parameters (akin to Rails' routes).
 
-Accordingly, the URL matcher for a bloom can be a simple string, a route-like string with embedded parameters, or a `RegExp` object. Matches from a route string or a `RegExp` will be passed in to the bloom's executable method for later use.
+Accordingly, the URL matcher for a bloom can be a simple string, a route-like string with embedded parameters, or a `RegExp` object. Matches from a route string or a RegExp will be passed in to the bloom's executable method for later use.
 
 ### Stings
 
@@ -48,7 +48,7 @@ Stings are event-level specifications within a bloom that indicate which event l
 
 ## Author
 
-Jellyfish was written by Brad Fults <bfults@gmail.com>.
+Jellyfish was written by Brad Fults—<bfults@gmail.com>.
 
 ## Inspiration
 

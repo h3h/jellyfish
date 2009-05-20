@@ -30,3 +30,15 @@ $(document).jellyfish(function () {
   });
 
 });
+
+// standalone version
+
+Jellyfish(function () {
+
+  bloom('/', function () {
+    sting("#header/click", function () {
+      alert("hi");
+    });
+  });
+
+});
