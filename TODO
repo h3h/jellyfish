@@ -1,0 +1,7 @@
+[ ] Use closures for bloom & sting instead of explicit args
+[ ] Basic non-jQuery version
+[ ] Basic jQuery plugin and working version
+[ ] Global blooms
+[ ] Load external JS file inside a bloom
+[ ] Plan custom event support
+[ ] Implement custom event support
