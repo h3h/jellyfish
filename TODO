@@ -1,4 +1,4 @@
-[ ] Use closures for bloom & sting instead of explicit args
+[x] Use this object for bloom & sting instead of explicit args
 [ ] Basic non-jQuery version
 [ ] Basic jQuery plugin and working version
 [ ] Global blooms

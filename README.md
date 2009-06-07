@@ -70,7 +70,7 @@ You can create a bloom that applies on all pages by specifying the string `'*'`.
 
 ## Author
 
-Jellyfish was written by Brad Fults <bfults@gmail.com>.
+Jellyfish was written by Brad Fults (http://h3h.net/, <bfults@gmail.com>).
 
 ## Inspiration
 
