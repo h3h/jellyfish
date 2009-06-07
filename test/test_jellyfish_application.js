@@ -3,15 +3,17 @@
   var equals = jqUnit.equals;
   context('Jellyfish', 'bare initializer', {
     before: function () {
-      this.app = Jellyfish(function (bloom) {
 
-        bloom('/', function (params, sting) {
+      this.app = Jellyfish(function () {
+        this.
+        bloom('/', function (params) {
+          this.
           sting("#header/click", function () {
             alert("hi");
           });
         });
-
       });
+
     }
   }).
   should('have one bloom', function () {

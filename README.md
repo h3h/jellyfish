@@ -9,13 +9,13 @@ Jellyfish doesn't replace other JS frameworks like jQuery or YUI—it runs right
 ## Dive In with an Example
 
     jQuery(document).jellyfish(function () {
-
+      this.
       bloom('/about', function () {
+        this.
         sting('#header/click', function (evt) {
           alert("Hi there.");
         });
       });
-
     });
 
 ## Concepts
