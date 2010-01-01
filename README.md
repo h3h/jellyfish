@@ -2,20 +2,26 @@
 
 Jellyfish is a framework for writing JavaScript for an entire web site or grouping of pages. Instead of focusing on each page and component individually as is traditional, Jellyfish lets you step back and specify the high-level structure and interaction of your JS across multiple pages from a single JS source file.
 
+## Why create Jellyfish?
+
+I kept running into situations where I wanted to create a relatively simple web site that had many static pages and a small amount of scripting on each. Previously, I would have to create a separate .js file for each static page, then loading each different .js file from each .html file.
+
+Instead of worrying about all of these different .js files for a small amount of scripting, I created Jellyfish. This way, I can write a single .js file that controls all of the scripting across the site, partitioned by page (or sets of pages). I can include the single .js file in my layout file and avoid the headache of managing myriad .js files. Isn't that nice?
+
 ## A Complementary Framework
 
-Jellyfish doesn't replace other JS frameworks like jQuery or YUI—it runs right alongside them and complements their functionality with page-level abilities. Jellyfish is most at home with jQuery, but can perform simple duties without any library present. In the future, Jellyfish may be extended to work directly with other JS frameworks.
+Jellyfish doesn't replace other JS frameworks like jQuery or YUI&mdash;it runs right alongside them and complements their functionality with page-level abilities. Jellyfish is most at home with jQuery, but can perform simple duties without any library present. In the future, Jellyfish may be extended to work directly with other JS frameworks.
 
 ## Dive In with an Example
 
     jQuery(document).jellyfish(function () {
-      this.
-      bloom('/about', function () {
-        this.
-        sting('#header/click', function (evt) {
+
+      this.bloom('/about', function () {
+        this.sting('#header/click', function (evt) {
           alert("Hi there.");
         });
       });
+
     });
 
 ## Concepts
@@ -70,7 +76,10 @@ You can create a bloom that applies on all pages by specifying the string `'*'`.
 
 ## Author
 
-Jellyfish was written by Brad Fults (<http://h3h.net/>, <bfults@gmail.com>).
+Jellyfish was written by Brad Fults ([h3h.net][site], [bfults@gmail.com][email]).
+
+  [site]: http://h3h.net/
+  [email]: mailto:bfults@gmail.com
 
 ## Inspiration
 
