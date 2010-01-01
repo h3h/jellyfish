@@ -1,5 +1,6 @@
-[x] Use this object for bloom & sting instead of explicit args
-[ ] Basic non-jQuery version
+[ ] Break out matcher tests as unit tests, test many more edge cases
+[ ] Attach event handlers w/o jQuery
+[ ] Functional tests for basic event handling
 [ ] Basic jQuery plugin and working version
 [ ] Global blooms
 [ ] Load external JS file inside a bloom

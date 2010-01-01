@@ -1,32 +1,26 @@
+// jQuery version
 
 $(document).jellyfish(function () {
 
-  bloom('/about', function () {
-
-    sting('#footer/click', function (evt) {
+  this.bloom('/about', function () {
+    this.sting('#footer/click', function (evt) {
       alert("Hi there.");
     });
-
-    sting("ul/mouseover", function (evt) {
+    this.sting("ul/mouseover", function (evt) {
       $(this).css('backgroundColor', '#00f');
     });
-
   });
 
-  bloom(/events\/(.*)/, function (params) {
-
-    sting('#header/click', function (evt) {
+  this.bloom(/events\/(.*)/, function (params) {
+    this.sting('#header/click', function (evt) {
       alert("Event id:" + params[0]);
     });
-
   });
 
-  bloom('/users/:username', function (params) {
-
-    sting('#header/click', function (evt) {
+  this.bloom('/users/:username', function (params) {
+    this.sting('#header/click', function (evt) {
       $(this).html("Hi, " + params['username']);
     });
-
   });
 
 });
@@ -35,8 +29,8 @@ $(document).jellyfish(function () {
 
 Jellyfish(function () {
 
-  bloom('/', function () {
-    sting("#header/click", function () {
+  this.bloom('/', function () {
+    this.sting("#header/click", function () {
       alert("hi");
     });
   });
