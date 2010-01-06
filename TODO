@@ -1,4 +1,3 @@
-[ ] Break out matcher tests as unit tests, test many more edge cases
 [ ] Attach event handlers w/o jQuery
 [ ] Functional tests for basic event handling
 [ ] Basic jQuery plugin and working version
