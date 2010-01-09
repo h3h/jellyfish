@@ -74,6 +74,10 @@ You can create a bloom that applies on all pages by specifying the string `'*'`.
 
 …
 
+## Testing
+
+Run the bundled tests by opening `test/jellyfish.html` in your web browser.
+
 ## Author
 
 Jellyfish was written by Brad Fults ([h3h.net][site], [bfults@gmail.com][email]).
