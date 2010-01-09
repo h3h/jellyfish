@@ -5,6 +5,8 @@ var MY_REGEX_BLOOM = 0;
 var MY_REGEX_PARAM_0;
 var MY_REGEX_PARAM_1;
 var MY_STRING_FORMAT_BLOOM = 0;
+var MY_STRING_FORMAT_PARAM_0;
+var MY_STRING_FORMAT_PARAM_1;
 var MY_WRONG_STRING_FORMAT_BLOOM = 0;
 
 // stub out the getPathName method so we can test a particular URL
@@ -33,8 +35,10 @@ var JellyfishApp = Jellyfish(function () {
     MY_EXACT_EXECUTED_BLOOM = 1;
   });
 
-  this.bloom('/foo/bar/:id', function (params) {
+  this.bloom('/:base/bar/:id', function (params) {
     MY_STRING_FORMAT_BLOOM = 1;
+    MY_STRING_FORMAT_PARAM_0 = params['base'];
+    MY_STRING_FORMAT_PARAM_1 = params['id'];
   });
 
   this.bloom('/foo/bar/13/:id', function (params) {
@@ -62,6 +66,10 @@ should('give correct params for regex group matches', function () {
 }).
 should('execute the correct bloom for a matching string format', function () {
   equals(MY_STRING_FORMAT_BLOOM, 1);
+}).
+should('give correct params for a matching string format', function () {
+  equals(MY_STRING_FORMAT_PARAM_0, 'foo');
+  equals(MY_STRING_FORMAT_PARAM_1, '13');
 }).
 should('not execute a bloom with a non-matching string format', function () {
   equals(MY_WRONG_STRING_FORMAT_BLOOM, 0);
