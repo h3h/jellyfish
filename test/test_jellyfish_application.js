@@ -1,5 +1,7 @@
 var MY_CLICKED_EVENT = 0;
 var MY_EXACT_EXECUTED_BLOOM = 0;
+var MY_GLOBAL_BLOOM_1 = 0;
+var MY_GLOBAL_BLOOM_2 = 0;
 var MY_OTHER_EXECUTED_BLOOM = 0;
 var MY_REGEX_BLOOM = 0;
 var MY_REGEX_PARAM_0;
@@ -44,6 +46,18 @@ var jellyfishApp = Jellyfish(function () {
   this.bloom('/foo/bar/13/:id', function (params) {
     MY_WRONG_STRING_FORMAT_BLOOM = 1;
   });
+
+  this.bloom('*', function (params) {
+    MY_GLOBAL_BLOOM_1 = 1;
+  });
+
+  Jellyfish.getPathName = function () {
+    return '/example';
+  }
+
+  this.bloom('*', function (params) {
+    MY_GLOBAL_BLOOM_2 = 1;
+  });
 });
 
 var context = jqUnit.context;
@@ -76,4 +90,8 @@ should('not execute a bloom with a non-matching string format', function () {
 }).
 should('add a sting for an element, by id', function () {
   equals(jellyfishApp.blooms[0].stings[0].selector, "#test_button");
+}).
+should('match all URLs with a global bloom', function () {
+  equals(MY_GLOBAL_BLOOM_1, 1);
+  equals(MY_GLOBAL_BLOOM_2, 1);
 });
