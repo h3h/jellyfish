@@ -14,16 +14,16 @@ Jellyfish.getPathName = function () {
   return "/foo/bar/13";
 }
 
-var JellyfishApp = Jellyfish(function () {
-  this.bloom('/other_page', function (params) {
-    MY_OTHER_EXECUTED_BLOOM = 1;
-  });
-
+var jellyfishApp = Jellyfish(function () {
   this.bloom(/^\/foo/, function (params) {
     MY_REGEX_BLOOM = 1;
-    this.sting("#test_link/click", function () {
+    this.sting("#test_button/click", function (evt) {
       MY_CLICKED_EVENT = 1;
     });
+  });
+
+  this.bloom('/other_page', function (params) {
+    MY_OTHER_EXECUTED_BLOOM = 1;
   });
 
   this.bloom(/\/foo\/([^\/]+)\/([^\/]+)/, function (params) {
@@ -74,8 +74,6 @@ should('give correct params for a matching string format', function () {
 should('not execute a bloom with a non-matching string format', function () {
   equals(MY_WRONG_STRING_FORMAT_BLOOM, 0);
 }).
-should_eventually('install a click handler on an id', function () {
-  // click on #header
-  //document.getElementById("test_link").click();
-  equals(MY_CLICKED_EVENT, 1);
+should('add a sting for an element, by id', function () {
+  equals(jellyfishApp.blooms[0].stings[0].selector, "#test_button");
 });
