@@ -24,6 +24,8 @@ Jellyfish doesn't replace other JS frameworks like jQuery or YUI&mdash;it runs r
 
     });
 
+Hopefully you can see how this could be useful when spread out across many URLs and with many events, all without using separate .js files.
+
 ## Concepts
 
 Jellyfish defines a couple of its own concepts to separate page-level interaction from event-level interaction within a page.
