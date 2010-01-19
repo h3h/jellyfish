@@ -1,5 +1,3 @@
-[ ] Attach event handlers w/o jQuery
-[ ] Functional tests for basic event handling
 [ ] Basic jQuery plugin and working version
 [ ] Global blooms
 [ ] Load external JS file inside a bloom
