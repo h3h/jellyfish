@@ -10,7 +10,7 @@ Instead of worrying about all of these different .js files for a small amount of
 
 ## A Complementary Framework
 
-Jellyfish doesn't replace other JS frameworks like jQuery or YUI&mdash;it runs right alongside them and complements their functionality with page-level abilities. Jellyfish is most at home with jQuery, but can perform simple duties without any library present. In the future, Jellyfish may be extended to work directly with other JS frameworks.
+Jellyfish doesn't replace other JS frameworks like jQuery or YUI&mdash;it runs right alongside them and complements their functionality with page-level abilities. Jellyfish is most at home with jQuery, but can perform simple duties without any library present.
 
 ## Dive In with an Example
 
@@ -68,11 +68,11 @@ You can create a bloom that applies on all pages by specifying the string `'*'`.
 
 ### Loading Other JavaScript Files
 
-…
+TODO: Implement
 
 ### Custom Events
 
-…
+TODO: Implement
 
 ## Testing
 
