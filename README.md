@@ -14,7 +14,7 @@ Jellyfish doesn't replace other JS frameworks like jQuery or YUI&mdash;it runs r
 
 ## Dive In with an Example
 
-    jQuery(document).jellyfish(function () {
+    Jellyfish(function () {
 
       this.bloom('/about', function () {
         this.sting('#header/click', function (evt) {
