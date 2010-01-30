@@ -78,7 +78,9 @@ TODO: Implement
 
 ## Testing
 
-Run the bundled tests by opening `test/jellyfish.html` in your web browser.
+ * Clone this git repo.
+ * `git submodule init && git submodule update`
+ * Run the bundled tests by opening `test/jellyfish.html` in your web browser.
 
 ## Author
 
