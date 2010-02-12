@@ -11,6 +11,10 @@ var MY_STRING_FORMAT_PARAM_0;
 var MY_STRING_FORMAT_PARAM_1;
 var MY_WRONG_STRING_FORMAT_BLOOM = 0;
 
+jqUnit.test('jqunit-spec submodule present', function() {
+  jqUnit.ok(jqUnit.context);
+});
+
 // stub out the getPathName method so we can test a particular URL
 Jellyfish.getPathName = function () {
   return "/foo/bar/13";
