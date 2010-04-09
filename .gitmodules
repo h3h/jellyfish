@@ -1,3 +1,9 @@
 [submodule "vendor/jqunit-spec"]
 	path = vendor/jqunit-spec
 	url = git://github.com/quirkey/jqunit-spec.git
+[submodule "vendor/sammy"]
+	path = vendor/sammy
+	url = git://github.com/quirkey/sammy.git
+[submodule "vendor/qunit"]
+	path = vendor/qunit
+	url = git://github.com/jquery/qunit.git

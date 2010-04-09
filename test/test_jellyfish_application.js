@@ -11,8 +11,8 @@ var MY_STRING_FORMAT_PARAM_0;
 var MY_STRING_FORMAT_PARAM_1;
 var MY_WRONG_STRING_FORMAT_BLOOM = 0;
 
-jqUnit.test('jqunit-spec submodule present', function() {
-  jqUnit.ok(jqUnit.context);
+QUnit.test('jqunit-spec submodule present', function() {
+  QUnit.ok(QUnit.context);
 });
 
 // stub out the getPathName method so we can test a particular URL
@@ -64,8 +64,8 @@ var jellyfishApp = Jellyfish(function () {
   });
 });
 
-var context = jqUnit.context;
-var equals = jqUnit.equals;
+var context = QUnit.context;
+var equals = QUnit.equals;
 context('Jellyfish', 'bare initializer', {
   before: function () {}
 }).
